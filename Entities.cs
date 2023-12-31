@@ -39,16 +39,16 @@ namespace Firestar4.OpenTDBWrapper.Entities
 	internal class TriviaQuestionResponse
 	{
 		[JsonProperty]
-		public ResponseCode response_code { get; internal set; }
+		public ResponseCode Response_code { get; internal set; }
 
 		[JsonProperty]
-		public List<TriviaQuestion> results { get; internal set; }
+		public List<TriviaQuestion> Results { get; internal set; }
 
 		[JsonConstructor]
 		internal TriviaQuestionResponse(int response_code, List<TriviaQuestion> results)
 		{
-			this.response_code = (ResponseCode)response_code;
-			this.results = results;
+			this.Response_code = (ResponseCode)response_code;
+			this.Results = results;
 		}
 
 	}
